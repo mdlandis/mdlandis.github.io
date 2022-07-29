@@ -28,8 +28,10 @@
             <div class="header-content">
                 <h4 class="header-subtitle" >Hi, I'm</h4>
                 <h1 class="header-title">Marina Landis</h1>
-                <h6 class="header-mono" >Todo | Todo | Todo</h6>
-                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>View Resume</button>
+                <h6 class="header-mono">Game Developer | Software Engineer</h6>
+                <a href="assets/resume.pdf" target="blank"> 
+                    <button class="btn btn-primary btn-rounded"><i class="ti-file pr-2"></i>View Resume</button>
+                </a>
             </div>
         </div>
     </header>
@@ -44,7 +46,7 @@
                         <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
+                        <a href="#about-target" class="nav-link">About</a>
                     </li>
                     
                 </ul>
@@ -52,38 +54,33 @@
                     <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">Marina Landis</h5>
-                        <div class="brand-subtitle">Todo | Todo</div>
+                        <div class="brand-subtitle">Game Developer | Software Engineer</div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
+                        <a href="#resume-target" class="nav-link">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="#portfolio-target" class="nav-link">Portfolio</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
     <div class="container-fluid">
+        <div id="about-target"></div>
         <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I ?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">A Web Designer / Developer Located In Our Lovely Earth</h5>
-                <p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit.sit amet, Qui deserunt consequatur fugit repellendusillo voluptas?</p>
-                <button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>
-            </div>
+
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
                 <span class="line mb-5"></span>
+                <br>
                 <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> : 09/13/1996</li>
-                    <li><span>Email</span> : info@website.com</li>
-                    <li><span>Phone</span> : + (123) 456-7890</li>
-                    <li><span>Skype</span> : John_Doe </li>
-                    <li><span>Address</span> :  12345 Fake ST NoWhere AB Country.</li>
+                    <li><span>Marina Landis</span> (she/her)</li>
+                    <li><span>Email</span> : mdlandis99@gmail.com</li>
+                    <li><span>Location</span> : San Diego, CA</li>
                 </ul>
                 <ul class="social-icons pt-3">
                     <li class="social-item"><a class="social-link" href="#"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
@@ -91,29 +88,34 @@
                 </ul>  
             </div>
             <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">About Me</h3>
+                <span class="line mb-5"></span>
+                <br>
+                <h5 class="mb-3">I aim to create services and experiences that are inspiring and impactful.</h5>
+                <p class="mt-20">As a full-stack developer with a passion for design, simplicity and scalability are key parts of my software philosophy.</p>
+            </div>
+            <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">My Expertise</h3>
+                <br>
                 <span class="line mb-5"></span>
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>UX Design</h6>
-                        <p class="subtitle"> exercitat Repellendus,  corrupt.</p>
+                        <h6 class="expertise-h6">Software Development</h6>
                         <hr>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-1 text-danger pt-1"><i class="ti-game icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Web Development</h6>
-                        <p class="subtitle">Lorem ipsum dolor sit consectetur.</p>
+                        <h6 class="expertise-h6">Unity Development</h6>
                         <hr>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
                     <div class="col-10 ml-auto mr-3">
-                        <h6>Digital Marketing</h6>
-                        <p class="subtitle">voluptate commodi illo voluptatib.</p>
+                        <h6 class="expertise-h6">VR Development</h6>
                         <hr>
                     </div>
                 </div>
@@ -124,10 +126,11 @@
     <!--Resume Section-->
     <section class="section" id="resume">
         <div class="container">
+            <div id="resume-target"></div>
             <h2 class="mb-5">Resume</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
+            <div class="row resume">
+                <div class="col-md-6 col-lg-4 resume-column">
+                    <div class="card resume-card">
                        <div class="card-header">
                             <div class="mt-2">
                                 <h4>Work Experience</h4>
@@ -140,19 +143,19 @@
                             <img src="assets/imgs/shg_logo.png" class="img-center" width="100px">
                             <h5 class="experience-header-small">Student Associate Gameplay Engineer</h5>
                             
-                            <P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe</P>
+                            <P class="subtitle">I worked on the single-player campaign for <i>Call of Duty: Vanguard</i>, the top-grossing game of 2021. I was offered to extend my summer internship into full-time employment, so I worked on the game up until its launch, triaging critical bugs across several different gameplay systems. One of my many projects included building a system to allow for physics-based objects to behave correctly while on top of moving platforms, which was essential to the <a href="https://www.youtube.com/watch?v=6ny-SsSuU4M">train sequence</a> in the game's opening level.</P>
                             <hr>
-                            <P class="experience-header-tiny">Jun 2019 - Sep 2019</P>
+                            <P class="experience-header-tiny">Summer 2019</P>
                             <h6 class="experience-header-large">VMWare</h6>
                             <img src="assets/imgs/vmw_logo.png" class="img-center" width="100px">
                             <h5 class="experience-header-small">VR Developer Intern</h5>
                             
-                            <P class="subtitle">https://twitter.com/Mcopping/status/1167383112084545536 nuff said</P>
+                            <P class="subtitle">I worked on a focused innovation project within VMWare to build an enterprise platform for Virtual Reality training apps. I used Unity to build a system that allowed the same virtual training experiences to be compiled for both VR and AR, which was showcased to hundreds of people at <a href="https://twitter.com/Mcopping/status/1167383112084545536">VMWorld 2019.</a></P>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card">
+                <div class="col-md-6 col-lg-4 resume-column">
+                    <div class="card resume-card">
                        <div class="card-header">
                             <div class="mt-2">
                                 <h4>Education</h4>
@@ -166,18 +169,30 @@
                             <h5 class="experience-header-small">B.S in Computer Science</h5>
                             
                             
-                            <P class="subtitle">Bachelor's in CS</P>
+                            <P class="subtitle">I graduated with a GPA of 3.9, completing the Human-Computer Interaction track (read: design). Outside from my concentration, I took classes in a variety of CS topics, including:
+
+                            <ul class="list">
+                                <li><i>CS 161: Design and Analysis of Algorithms</i></li>
+                                <li><i>CS 140: Operating Systems</i></li>
+                                <li><i>CS 144: Introduction to Computer Networking</i></li>
+                                <li><i>CS 248: Interactive Computer Graphics</i></li>
+                                <li><i>CS 193C: Web Development</i></li>
+                                <li><i>CS 229A: Applied Machine Learning</i></li>
+                                <li><i>CS 124: From Languages to Information (NLP)</i></li>
+
+                            </ul></P>
                             <hr>
                             <P class="experience-header-tiny">2013 - 2017</P>
                             <h6 class="experience-header-large">Alameda High School</h6>  
                             <img src="assets/imgs/ahs_logo.png" class="img-center" width="100px">          
                             <h5 class="experience-header-small">High School Diploma</h5>             
-                            <P class="subtitle">i swear i went to high school please believe me please!!!</P>   
+                            <P class="subtitle">Graduated with a 4.0 GPA, unweighted.<i>
+                                <br>(I know high school isn't all that important, but I really wanted all the columns to be the same size.)</i></P>   
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card">
+                <div class="col-lg-4 resume-column">
+                    <div class="card resume-card">
                        <div class="card-header">
                             <div class="pull-left">
                                 <h4 class="mt-2">Skills</h4>
@@ -185,27 +200,47 @@
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                           <h6>hTL5 &amp; CSS3</h6>
-                            <h6>JavaScript</h6>
-                            <h6>PHP</h6>
-                            <h6>SQL</h6>
-                            <h6>Laborum</h6>
-                            <h6>Tempora</h6>
+                            <h5 class="skill-header">Languages</h5>
+                            <ul>
+                                <li><h5>C / C++/ C#</h5></li>
+                                <li><h5>Java</h5></li>
+                            </ul>
+                            <h5 class="skill-header">Game Development</h5>
+                            <ul>
+                                <li><h5>Unity (C#)</h5></li>
+                                <li><h5>VR (SteamVR, OVR, etc)</h5></li>
+                                <li><h5>Lua</h5></li>     
+                            </ul>
+                            <h5 class="skill-header">Web Development</h5>
+                            <ul>
+                                <li><h5>HTML + CSS</h5></li>
+                                <li><h5>JavaScript (React)</h5></li>
+                                <li><h5>Ruby (on Rails)</h5></li>
+                            </ul>
+                            <h5 class="skill-header">Miscellaneous</h5>
+                            <ul>
+                                <li><h5>Version Control (Git, P4V)</h5></li>
+                                <li><h5>Debugging (gdb, valgrind)</h5></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="card">
-                       <div class="card-header">
+                        <div class="card-header">
                             <div class="pull-left">
-                                <h4 class="mt-2">Languages</h4>
+                                <h4 class="mt-2">Interests</h4>
                                 <span class="line"></span>  
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                           <h6>English</h6>
-                            <h6>French</h6>
-                            <h6>Spanish</h6>
+                            <h6 class="">I play all kinds of games. Here are some favorites in a few categories:</h6>
+                            <ul>
+                                <li><h6>Video Game - Slay the Spire</h6></li>
+                                <li><h6>Board Game - Spirit Island</h6></li>
+                                <li><h6>Card Game - Magic: the Gathering</h6></li>
+                                <li><h6>TTRPG - Dungeons & Dragons</h6></li>
+                            </ul>
+                            <h6>I also enjoy reading fiction, particularly fantasy. (Current fave: the <i>Mistborn</i> trilogy)</h6>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -263,9 +298,9 @@
         </div>
     </section>
 -->
-
     <section class="section" id="portfolio">
         <div class="container">
+            <div id="portfolio-target"></div>
             <h2 class="mb-5 pb-4">Project <span class="text-danger">Highlights!</span></h2>
             <div class="row">
                 <div class="col-md-12 col-sm-12">
@@ -279,7 +314,7 @@
                                     <h5 class="mb-3 card-title text-dark">HyperScape</h5>
                                     <P class="subtitle">HyperScape is a roguelike action RPG that I've been building in Unity on my own time over the course of five months. The game features smooth and satisfying combat, a variety of intricately synergistic items and skills, as well as a suite of levels and enemies.
                                     </P>
-                                    <P>
+                                    <P class="subtitle_2">
                                     HyperScape is built on an ultra-modular system that allows even the most complex game components to be built entirely in the Unity Editor using the Odin Inspector - no code required.
                                     </P>
                                     <div class="button-links">
@@ -344,7 +379,7 @@
                                     As a game designer, I enjoy making my own add-ons to games that I play. Spirit Island is a board game I've always found deeply inspiring, however, the only way to make custom cards was to edit images in Photoshop by hand - an agonizingly time-consuming process.
                                     </P>
                                     <P>
-                                    So, I teamed up with a friend to build a solution: <a href="https://spiritforge.app/">SpiritForge</a>, a streamlined webapp built on ReactJS that speeds up card-making from hours to just minutes. SpiritForge was met with an <a href="https://boardgamegeek.com/thread/2792947/spirit-island-custom-card-maker">enthusiastic response</a> from the community, as well as recognition from the game's designer!
+                                    So, I teamed up with a friend to build <a href="https://spiritforge.app/">SpiritForge</a>, a streamlined webapp built on ReactJS that speeds up card-making from hours to just minutes. SpiritForge was met with an <a href="https://boardgamegeek.com/thread/2792947/spirit-island-custom-card-maker">enthusiastic response</a> from the community, as well as recognition from the game's designer!
                                     </P>
                                     <div class="button-links">
                                         <a href="https://spiritforge.app" target="_blank" rel="noopener noreferrer">

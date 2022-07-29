@@ -87,6 +87,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 
+.expertise-h6
+{
+  margin-top:  0.5rem;
+  margin-left:  0.25rem;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -168,7 +174,7 @@ a {
 }
 
 a:hover {
-  color: #f51330;
+  color: #34c0eb;
   text-decoration: none;
 }
 
@@ -556,6 +562,7 @@ pre code {
 }
 
 .container {
+  position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -588,6 +595,7 @@ pre code {
 }
 
 .container-fluid {
+  position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -2779,30 +2787,30 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #f63750;
-  border-color: #f62b45;
+  background-color: #34c0eb;
+  border-color: #34c0ff;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(249, 116, 133, 0.5);
-}
+  box-shadow: 0 0 0 0.2rem rgba(39, 245, 222, 0.25);
+}file:///C:/Users/mathl/Documents/GitHub/mdlandis.github.io/assets/resume.pdf
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #34c0eb;
-  border-color: #34c0eb;
+  background-color: #34e0ff;
+  border-color: #34e0ff;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #f62b45;
-  border-color: #f51f3a;
+  background-color: #34e0ff;
+  border-color: #34e0ff;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(249, 116, 133, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(39, 245, 222, 0.25);
 }
 
 .btn-secondary {
@@ -11576,7 +11584,7 @@ pre .code {
 }
 
 .header .header-content .header-mono {
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-weight: 500;
   font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: 40px;
@@ -11651,7 +11659,7 @@ pre .code {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 30px 0;
 }
 
 .section.bg-custom-gray {
@@ -11663,7 +11671,7 @@ pre .code {
 }
 
 .about-section .about-card {
-  padding: 60px;
+  padding: 5vw;
   border-right: 1px solid #dee2e6;
 }
 
@@ -11762,13 +11770,14 @@ pre .code {
 
 .button-links
 {
-  position:  absolute;
-  bottom:  10px;  
+  position:  relative;
+  bottom:  0px;  
 }
 
 .link-btn
 {
   margin-right:  10px;
+  margin-top:  10px;
 }
 
 /* The Modal (background) */
@@ -11838,4 +11847,54 @@ pre .code {
   .modal-content {
     width: 100%;
   }
+}
+
+.subtitle_2 
+{
+  margin-bottom:  0px;
+}
+
+.resume-card
+{
+  height:  100%;
+  margin-bottom:  0px;
+}
+
+.resume-half-card-top
+{
+  height:  60%;
+  margin-bottom:  10%;
+}
+
+.resume-half-card-bottom
+{
+  height:  30%;
+}
+
+.skill-header
+{
+  color: black;
+}
+
+.resume-column
+{
+  margin-top:  15px;
+}
+
+#resume-target
+{
+  position:  absolute;
+  top:  -90px;
+}
+
+#about-target
+{
+  position:  absolute;
+  top:  -25px;
+}
+
+#portfolio-target
+{
+  position:  absolute;
+  top:  -90px;
 }
