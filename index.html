@@ -25,30 +25,57 @@
                 
             }
 
-
-    .centerblock {
-      display: flex;
-        flex-direction: column;
-        justify-content: center;
-  align-items: center;
-
-  font-size: 20px;
-    }
+            
     
 
           body {
                 background-color: rgb(19, 18, 18);
               color: white;
             font-family: Arial, Helvetica, sans-serif;
+
+            margin:0;
             
 
             }
 
+            .centerblock {
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+  
+    }
+
+            .flex-container-column {
+    display: flex;
+    flex-direction: column;
+
+
+    min-width: 95vw; 
+    max-width: 95vw;
+
+    min-height: 30vh;
+    max-height: 100vh;
+
+    justify-content: flex-start;
+  align-items: left;
+    
+
+    
+
+   }
+  
 
 
 .flex-container-row {
   display: flex;
   flex-direction: row;
+  
+  width: 95%;
+
+
 
   margin: 20px;
   padding: 20px;
@@ -58,15 +85,12 @@
 
 }
 
-
-   .flex-container-col {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+.flex-container-row.other {
+    justify-content: flex-start;
+}
 
 
-   }
-
+  
 
  
 
@@ -86,10 +110,11 @@
 
     
     background-color: #250721e0;
-    padding: 30px;
+    padding: 20px;
 
-    height: auto;
-    width: 80%;
+
+
+    
 
 
    
@@ -99,6 +124,32 @@
  
 
 
+   }
+
+   .flex-item.bio.middle {
+    flex-basis:50%;
+   }
+
+   .flex-item.other{
+    max-width: 100vw;
+    
+    display: left;
+    
+   }
+
+   .flex-item.other.pic{
+    flex-basis:10%;
+   }
+
+   .flex-item.other.text{
+    flex-basis:90%;
+    
+    
+   }
+
+   .flex-item.work
+   {
+    flex: 0 0 50%;
    }
 
 
@@ -113,15 +164,26 @@
       }
 
 
+      .button {
+        background-color:rgb(188, 83, 237);
+  border: none;
+  color: rgb(39, 22, 73);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
 
       
       a{
           text-decoration: none;
-            color:aquamarine;
+            color:rgb(188, 83, 237);
       }
       
       a:hover{
-          color:red;
+          color:rgb(217, 200, 224);
       }
 
       .video-container {
@@ -154,19 +216,23 @@
 
  </style>
 
-   <div class="centerblock">
+
+
+<div class="centerblock">
 
    
 
     <div class="flex-container-row">
 
         <div class="flex-item">
+          <div class="center">
             <img src="./photos/marina_2026.jpg" width="200">
+          </div>
 
 
         </div>
 
-        <div class="flex-item">
+        <div class="flex-item bio middle">
             <p>Hi, I’m Marina.</p> 
             <p>Five years of AAA game development. Seasoned gameplay engineer, strong design sense, excellent communicator. Players come first, always.</p>
             <p>This website is still partially under construction, so forgive its barebones appearance...</p>
@@ -174,9 +240,9 @@
         </div>
 
 
-        <div class="flex-item">
+        <div class="flex-item work">
             <div class="center">
-                <a href="./pdf/resume.pdf" target="_blank" download="Marina Landis Resume 2026">Resume (PDF)</a><br>
+                <a href="./pdf/resume.pdf" class="button" target="_blank" download="Marina Landis Resume 2026">Resume (PDF)</a><br><br>
                 mdlandis99@gmail.com<br>
                 <a href="https://www.linkedin.com/in/mdlandis">LinkedIn</a><br>
                 <a href="https://github.com/mdlandis">GitHub</a>
@@ -193,35 +259,67 @@
     Games I've Worked On
     <div class="flex-container-row">
         
-        <div class="flex-item">
+        <div class="flex-item work">
+
+          <div class="center">
 
             <h2>1001: Threads of Mizan</h2>
             <img src="./photos/threads_of_mizan_square.png" width="400">
+          </div>
             <p>MBC Game Studios & Free Range Games, 2022 - Present</p>
             <p>I’ve been working on 1001: Threads of Mizan as a gameplay engineer, a multiplayer game built on Unreal Engine 5’s Gameplay Ability System. I focus on core combat and player characters (Hit reactions, melee combat, special abilities). I often fill a dual role as a designer, answering unsolved questions about combat and player progression.</p>
     
-        </div>
+          </div>
+        
 
-        <div class="flex-item">
+
+        <div class="flex-item" flex="0 0 50%">
+          <div class="center">
             <h2>Call of Duty: Vanguard </h2>
             <img src="./photos/vanguard_square.png" width="400">
+          </div>
             <p>Sledgehammer Games, 2020-2021</p>
             <p>I worked on the single-player campaign for Call of Duty: Vanguard, the top-grossing game of 2021. I prototyped new player mechanics, updated systems for trains & flight, and triaged bugs across a scarcely documented codebase.</p>
-        </div>
+          
+          </div>
 
     </div>
 
     Other Experience
-    <div class="flex-container-row">
-        <div class="flex-item">
-            <img src="./photos/vmw_logo.png" width="150">
-            <p>VMWare Office of the CTO, 2019</p>
-            <p>VR Developer Intern. I built an app that ran in both VR and AR to tutorialize server assembly, and demo’d it to hundreds of people at VMWorld 2019.</p>
-            <img src="./photos/stanford_logo.png" width="150">
-            <p>Stanford University, 2017-2022<br>
-                B.S in Computer Science with a focus in Human-Computer Interaction</p>
-        </div>
-    </div>
+    <div class="flex-container-row other">
+
+        <div class="flex-container-column">
+    
+    
+
+           
+            <div class="flex-container-row">
+            
+              <div class="flex-item other pic">
+                <img src="./photos/vmw_logo.png" width="150">
+              </div>
+              <div class="flex-item other text">
+                <p>VMWare Office of the CTO, 2019</p>
+                <p>VR Developer Intern. I built an app that ran in both VR and AR to tutorialize server assembly, and demo’d it to hundreds of people at VMWorld 2019.</p>
+              </div>
+            </div>
+         
+            
+           
+    
+             
+                <div class="flex-container-row">
+                <div class="flex-item other pic">
+                <img src="./photos/stanford_logo.png" width="150">
+              </div>
+                <div class="flex-item other text">
+                <p>Stanford University, 2017-2022<br>
+                    B.S in Computer Science with a focus in Human-Computer Interaction</p>
+                  </div>
+                  </div>
+                </div>
+</div>
+    
 
     Personal Projects
     <div class="flex-container-row">
@@ -229,8 +327,8 @@
         <div class="flex-item">
             <h2>Tactics Beyond Time</h2>
             <p>A Teamfight Tactics inspired single-player autobattler. Features 65 playable characters, 55 items, and 23 traits, all fully functional. Check out the demo! </p>
-            <a href="https://youtu.be/NGKkhh7nM6A" target="_blank">Gameplay Demo</a><br>
-            <a href="https://mega.nz/file/IIskUa6L#_4CAio8hsDl1D9QGTN-OV--1NyiWHv3MAPrCudQc8wo">Download Here</a>
+            <a href="https://mega.nz/file/IIskUa6L#_4CAio8hsDl1D9QGTN-OV--1NyiWHv3MAPrCudQc8wo" class="button">Download Here</a>
+
         </div>
 
         <div class="flex-item">
@@ -248,8 +346,7 @@
 
     <div class="flex-container-row">
         <div class="flex-item">
-            <p>Past projects</p>
-            <p>I've done some other stuff, but this part of the website isn't ready yet!</p>
+            <p>Other projects</p>
         </div>
 
          <div class="flex-item">
@@ -257,11 +354,14 @@
         </div>
     </div>
 
+    
+
 
 
         
 
 
         </div>
+          
 
         </body>
